@@ -41,8 +41,11 @@ namespace MarketProject
         {
             product.Count--;
             if (product.Count < 0) Console.WriteLine("There is no adequate product for selling");
-            Console.WriteLine($"{product.ProductName} has been successfully sold");
-            soldProducts.Add(product);
+            else
+            {
+                Console.WriteLine($"{product.ProductName} has been successfully sold");
+                soldProducts.Add(product);
+            }
         }
     }
 }
